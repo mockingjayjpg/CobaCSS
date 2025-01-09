@@ -6,20 +6,21 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
     color: #333;
     line-height: 1.6;
 }
 
 /* Header Styling */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #1e3a8a;  /* Biru Tua */
+    color: white;
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav .logo h1 {
@@ -43,18 +44,20 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #575757;
+    background-color: #3b82f6;  /* Biru terang */
     border-radius: 5px;
 }
 
 /* About Section Styling */
 #about {
-    background-color: #fff;
+    background-color: white;
     padding: 60px 0;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #about .container {
@@ -69,153 +72,123 @@ nav ul li a:hover {
     height: 150px;
     border-radius: 50%;
     margin-right: 30px;
+    transition: transform 0.5s ease;
+}
+
+#about .profile img:hover {
+    transform: scale(1.1);
 }
 
 #about .bio h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #1e3a8a;  /* Biru Tua */
 }
 
 #about .bio p {
     font-size: 18px;
     width: 60%;
     margin: 0 auto;
+    color: #555;
 }
 
 /* Education Section Styling */
 #education {
-    background-color: #f9f9f9;
+    background-color: #e0f2fe;
     padding: 60px 0;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 #education h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
+    color: #1e3a8a;  /* Biru Tua */
 }
 
-.education-list {
-    list-style: none;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.education-list li {
-    background-color: #fff;
+.education-item {
+    background-color: white;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.education-list h3 {
+.education-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #1e3a8a;
 }
 
-.education-list p {
+.education-item p {
     font-size: 16px;
+    color: #555;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
 }
 
 /* Projects Section Styling */
 #projects {
-    background-color: #fff;
+    background-color: white;
     padding: 60px 0;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 #projects h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
+    color: #1e3a8a;
 }
 
 .project {
     display: inline-block;
     width: 45%;
-    background-color: #fff;
+    background-color: white;
     margin: 10px;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .project img {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 .project h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #1e3a8a;
 }
 
 .project p {
     font-size: 16px;
     margin-bottom: 15px;
+    color: #555;
 }
 
 .project a {
-    color: #007bff;
+    color: #3b82f6;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .project a:hover {
     text-decoration: underline;
 }
 
+.project:hover {
+    transform: translateY(-5px);
+}
+
 /* Contact Section Styling */
 #contact {
-    background-color: #f9f9f9;
+    background-color: #e0f2fe;
     padding: 60px 0;
-}
+    animation: fadeInUp 1s
 
-#contact h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-form {
-    width: 50%;
-    margin: 0 auto;
-}
-
-form label {
-    font-size: 18px;
-    margin-bottom: 8px;
-    display: block;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    font-size: 16px;
-}

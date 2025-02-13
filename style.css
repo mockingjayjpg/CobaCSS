@@ -32,6 +32,16 @@ section {
     margin: 20px;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
 .project {
     margin: 20px 0;
     text-align: center;
@@ -82,4 +92,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
